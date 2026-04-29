@@ -1,0 +1,19 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-dotenv>=1.0
+python-jose[cryptography]>=3.3
+httpx>=0.27
+
+# LiveKit agent stack: currently works best on Python 3.12/3.13.
+livekit
+livekit-agents[all]
+livekit-plugins-openai
+livekit-plugins-cartesia
+livekit-plugins-deepgram
+livekit-plugins-silero
+
+# Optional (audio enhancement / noise cancellation)
+livekit-plugins-ai-coustics>=0.2.11
+
+# Turn detection model used by the agent session
+livekit-plugins-turn-detector
